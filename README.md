@@ -31,11 +31,7 @@ git clone https://github.com/your-username/english-accent-analyzer.git
 cd english-accent-analyzer
 
 
-
-
-
-
-
+### 2. Install dependencies
 
 
 
