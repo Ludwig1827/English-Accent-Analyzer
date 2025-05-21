@@ -25,19 +25,55 @@ Built using:
 ## 🛠️ Setup
 
 ### 1. Clone this repository
-
-```bash
+```
+bash
 git clone https://github.com/your-username/english-accent-analyzer.git
 cd english-accent-analyzer
+```
+
+### 2. Install Python dependencies
+```
+pip install -r requirements.txt
+```
+
+### 3. Install system dependencies
+```
+sudo apt update
+sudo apt install ffmpeg
+```
+You may also need yt-dlp for extracting audio from streaming platforms:
+```
+pip install yt-dlp
+```
 
 
-### 2. Install dependencies
+## 🚀 Run the App
+```
+from agent.video_analysis_agent import agent
+from langchain_core.messages import HumanMessage
 
+video_url = "https://your-video-url.com"
+response = agent.invoke({"messages": [HumanMessage(content=f"Analyze this video: {video_url}")]})
+print(response["messages"][-1].content)  # final output
 
+```
 
+## 📦 Example Output
+## 🎧 Audio Analysis Results
 
+### 🗣️ Detected Language
+- **Language**: English
+- **Confidence**: 100.0%
 
+### 🎯 Accent Classification
+- **Accent**: American (US)
+- **Confidence**: 69.7%
 
+### 📝 Summary of Transcription
+- The speaker is an AI Engineer and graduate student at Rice University.
+- They build intelligent multi-agent systems for legal and financial workflows.
+- Their system leverages LangChain and vector databases for decision-making.
+- They are seeking collaborators to scale this technology.
 
 
 
