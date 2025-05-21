@@ -1,0 +1,11 @@
+yt-dlp
+moviepy
+lingua-language-detector
+openai-whisper
+langgraph
+speechbrain
+langchain-ollama
+langchain-openai
+torch
+torchaudio
+ffmpeg-python
