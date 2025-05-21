@@ -25,7 +25,7 @@ from langchain_openai import ChatOpenAI
 
 # get from the tools
 from tools.extract_audio import extract_audio_from_video_url
-from tools.transcribe import get_text_from_audio
+from tools.get_text_from_audio import get_text_from_audio
 from tools.detect_language import detect_language_with_confidence
 from tools.classify_accent import classify_accent
 from tools.summarize import summarize_text
